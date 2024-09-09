@@ -1,6 +1,5 @@
-package com.example.project;
 
-public class String1 {
+class String1 {
 	private char[] str;
 	private int size;
 
@@ -43,9 +42,6 @@ public class String1 {
         return true;
     }
     public void reverse() {
-        if (size<0) {
-            return;
-        }
         for (int i = 0; i <= size/2; i++) {
             char temp = str[i];
             str[i] = str[size-i];
@@ -55,24 +51,17 @@ public class String1 {
 }
 
 
-// class Test {
-//     public static void main(String args[]) {
-//         String1 s1 = new String1();
-//         s1.append('a');
-//         s1.append('b');
-//         s1.append('c');
+public class Test {
+    public static void main(String args[]) {
+        String1 s1 = new String1();
+        s1.append('a');
+        s1.append('b');
+        s1.append('c');
 
-//         String1 s2 = new String1();
-//         s2.append('a');
-//         s2.append('b');
-//         s2.append('d');
-//         s1.reverse();
-        
-//         String1 s3 = new String1();
-//         s3.reverse();
-//         s1.reverse();
-//         for (int i = 0; i < s1.length(); i++) {
-//             System.out.print(s1.getChar(i));
-//         }
-//     }
-// }
+        String1 s2 = new String1();
+        s2.append('a');
+        s2.append('b');
+        s2.append('c');
+        System.out.println("heeyyyy");
+    }
+}
